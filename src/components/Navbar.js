@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Navbar = () => <div></div>;
+const Navbar = () => <div />;
 
 export default Navbar;

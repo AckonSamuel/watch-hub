@@ -1,5 +1,6 @@
 import React from 'react';
+import Film from './components/Film';
 
-const App = () => <h1>Hello</h1>;
+const App = () => <Film />;
 
 export default App;

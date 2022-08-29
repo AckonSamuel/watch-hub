@@ -8,14 +8,14 @@ const Banner = () => {
     const films = useSelector((state) => state.films, shallowEqual);
     const imgArray = [];
     films.forEach(film => {
-      imgArray.push(film.image)  
+      imgArray.push(film.movie_banner)  
     });
 
     const randomNum = Math.floor(Math.random() * imgArray.length);
 
-    return (<Card style={{ margin: '3%', width: 'auto', height: 'auto'}}>
+    return (<Card style={{ width: '100%', height: '100%', padding: '0'}}>
         <Card.Img variant="top" src={imgArray[randomNum]} 
-        style={{ margin: '3%', width: 'auto', height: 'auto'}} />
+        style={{ width: '100%', height: '100%', objectFit: 'cover', margin: '0'}} />
     </Card>)
 }
 

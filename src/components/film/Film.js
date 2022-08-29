@@ -7,7 +7,7 @@ import './filmlist.css';
 const Film = ({
   id, title, origin, origin_romanised, image,
 }) => (
-  <Card class="card" id={id} border="dark" style={{ marginTop: '3%', width: '30%', height: '50%' }}>
+  <Card className="card" id={id} border="dark" style={{ marginTop: '3%', width: '30%', height: '50%' }}>
     <Card.Img variant="top" src={image} style={{ width: '90%', height: '50%', margin: 'auto' }} />
     <Card.Body style={{ color: '#dfdfdf', fontSize: '0.9em' }}>
       <Card.Title>{title}</Card.Title>

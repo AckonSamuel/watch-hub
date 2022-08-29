@@ -4,7 +4,14 @@ import Banner from './film/Banner';
 import Filmlist from './film/Filmlist';
 
 const Homepage = () => (
-  <div />
+  <section>
+    <Row>
+      <Banner />
+    </Row>
+    <Row>
+      <Filmlist />
+    </Row>
+  </section>
 );
 
 export default Homepage;

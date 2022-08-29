@@ -2,7 +2,6 @@ import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const FETCH_FILMS = 'watch-hub/film/films';
-// const POPULATE_FILMS = 'watch-hub/film/populateFilms';
 
 const initialState = [];
 

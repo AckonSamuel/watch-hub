@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
-import { FetchFilms } from '../redux/film';
+import { FetchFilms } from '../../redux/film';
 import Film from './Film';
 import './filmlist.css';
 

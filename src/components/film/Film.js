@@ -16,7 +16,7 @@ const Film = ({
       <Card.Text>
         {origin_romanised}
       </Card.Text>
-      <Button as="a" variant="primary" style={{ width: '90%', height: '20%', margin: 'auto' }}>Go somewhere</Button>
+      <Button as="a" variant="primary" style={{ width: '90%', height: '20%', margin: 'auto' }}>Explore {'>'}{'>'}{'>'}</Button>
     </Card.Body>
   </Card>
 );

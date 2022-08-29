@@ -1,6 +1,15 @@
 import React from 'react';
-import Filmlist from './components/Filmlist';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Filmlist from './components/film/Filmlist';
+import Details from './components/details/Details';
 
-const App = () => <Filmlist />;
+const App = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Filmlist />} />
+      <Route path="/details" element={<Details />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

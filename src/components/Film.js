@@ -2,17 +2,19 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import download from './download.jpg';
 
-const Film = () => (
-  <Card border="primary" style={{ width: '18rem' }}>
-    <Card.Img variant="top" src={download} />
+const Film = ({
+  id, title, origin, origin_romanised, image,
+}) => (
+  <Card id={id} border="primary" style={{ width: '18rem' }}>
+    <Card.Img variant="top" src={image} />
     <Card.Body>
-      <Card.Title>Card Title</Card.Title>
+      <Card.Title>{title}</Card.Title>
+      <Card.Subtitle>
+        {origin}
+      </Card.Subtitle>
       <Card.Text>
-        Some quick example text
-        to build on the card title
-        and make up the bulk of the card content.
+        {origin_romanised}
       </Card.Text>
       <Button as="a" variant="primary">Go somewhere</Button>
     </Card.Body>

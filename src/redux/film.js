@@ -19,6 +19,7 @@ const FetchFilms = createAsyncThunk(
   FETCH_FILMS,
   async () => {
     const res = await axios.get('https://ghibliapi.herokuapp.com/films');
+    console.log(res);
     return res;
   },
 );

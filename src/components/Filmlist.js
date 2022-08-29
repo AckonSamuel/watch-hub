@@ -4,22 +4,25 @@ import { FetchFilms } from '../redux/film';
 import Film from './Film';
 
 const Filmlist = () => {
-  
   const dispatch = useDispatch();
-  useEffect(() => dispatch(FetchFilms()), []);
   const films = useSelector((state) => state.films, shallowEqual);
+  useEffect(() => { dispatch(FetchFilms()); }, []);
 
-  
   return (
-    films.map((film) => {
-      <Film 
-      key={film.id}
-      title={film.title}
-      origin={film.original_title}
-      origin_romanised={film.original_title_romanised}
-      image={film.image}
+    <section className="container">
+      {
+    films.map((film) => (
+      <Film
+        key={film.id}
+        id={film.id}
+        title={film.title}
+        origin={film.original_title}
+        origin_romanised={film.original_title_romanised}
+        image={film.image}
       />
-    })
-);
-}
+    ))
+  }
+    </section>
+  );
+};
 export default Filmlist;

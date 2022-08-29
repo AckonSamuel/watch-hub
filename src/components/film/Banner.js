@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.css';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './filmlist.css';
 
@@ -14,6 +13,10 @@ const Banner = () => {
 
     const randomNum = Math.floor(Math.random() * imgArray.length);
 
-    return (<section>
-    </section>)
+    return (<Card style={{ margin: '3%', width: 'auto', height: 'auto'}}>
+        <Card.Img variant="top" src={imgArray[randomNum]} 
+        style={{ margin: '3%', width: 'auto', height: 'auto'}} />
+    </Card>)
 }
+
+export default Banner;

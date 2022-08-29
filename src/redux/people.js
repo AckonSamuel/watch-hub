@@ -25,7 +25,7 @@ const FetchPeople = createAsyncThunk(
     const res = await axios.get(peep).then((res) => res.data);
     console.log(res);
     return res;
-  },)
+  }),
 );
 
 export {

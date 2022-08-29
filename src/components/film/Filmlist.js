@@ -7,7 +7,7 @@ import './filmlist.css';
 const Filmlist = () => {
   const dispatch = useDispatch();
   const films = useSelector((state) => state.films, shallowEqual);
-  
+
   useEffect(() => { dispatch(FetchFilms()); }, []);
 
   return (

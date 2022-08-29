@@ -1,7 +1,5 @@
 import React from 'react';
 
-const DetailSkeleton = () => {
-return <h1>hello man</h1>
-};
+const DetailSkeleton = ({title}) => <h1>{title}</h1>;
 
 export default DetailSkeleton;

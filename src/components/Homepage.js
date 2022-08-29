@@ -7,7 +7,7 @@ import Filmlist from './film/Filmlist';
 
 const Homepage = () => (
   <Container>
-    <Row style={{height: '30%'}}>
+    <Row style={{ height: '30%' }}>
       <Banner />
     </Row>
     <Row>

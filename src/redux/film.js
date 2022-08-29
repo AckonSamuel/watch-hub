@@ -18,7 +18,7 @@ const filmReducer = (state = initialState, action) => {
 const FetchFilms = createAsyncThunk(
   FETCH_FILMS,
   async () => {
-    const res = await axios.get('https://ghibliapi.herokuapp.com/films');
+    const res = await axios.get('https://ghibliapi.herokuapp.com/films').then((res) => res.data);
     console.log(res);
     return res;
   },

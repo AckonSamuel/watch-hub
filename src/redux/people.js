@@ -1,5 +1,10 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { useSelector, shallowEqual } from 'react-redux';
+
+const films = useSelector((state) => state.films, shallowEqual);
+const peepArr = [];
+films.foreach((film) => peepArr.push(film.people));
 
 const FETCH_PEOPLE = 'watch-hub/people/people';
 
@@ -16,11 +21,11 @@ const peopleReducer = (state = initialState, action) => {
 
 const FetchPeople = createAsyncThunk(
   FETCH_PEOPLE,
-  async () => {
-    const res = await axios.get('https://ghibliapi.herokuapp.com/people').then((res) => res.data);
+  peeps.map((peep) => async () => {
+    const res = await axios.get(peep).then((res) => res.data);
     console.log(res);
     return res;
-  },
+  },)
 );
 
 export {

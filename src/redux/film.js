@@ -7,25 +7,24 @@ const FETCH_FILMS = 'watch-hub/film/films';
 const initialState = [];
 
 const filmReducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'watch-hub/film/films/fulfilled':
-            return [...action.payload];
-        default: 
-        return state;
-    }
-    
-}
+  switch (action.type) {
+    case 'watch-hub/film/films/fulfilled':
+      return [...action.payload];
+    default:
+      return state;
+  }
+};
 
 const FetchFilms = createAsyncThunk(
-    FETCH_FILMS,
-    async () => {
-        const res = await axios.get('https://ghibliapi.herokuapp.com/films');
-        return res;
-    },
+  FETCH_FILMS,
+  async () => {
+    const res = await axios.get('https://ghibliapi.herokuapp.com/films');
+    return res;
+  },
 );
 
 export {
-    FetchFilms, 
-}
+  FetchFilms,
+};
 
 export default filmReducer;

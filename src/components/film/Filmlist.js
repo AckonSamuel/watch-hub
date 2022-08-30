@@ -2,11 +2,9 @@ import React from 'react';
 import Film from './Film';
 import './filmlist.css';
 
-const Filmlist = ({ films }) => {
-
-  return (
-    <section className="container">
-      {
+const Filmlist = ({ films }) => (
+  <section className="container">
+    {
     films.map((film) => (
       <Film
         key={film.id}
@@ -18,7 +16,6 @@ const Filmlist = ({ films }) => {
       />
     ))
   }
-    </section>
-  );
-};
+  </section>
+);
 export default Filmlist;

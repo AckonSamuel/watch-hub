@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => (
-  <Navbar bg="dark" expand="lg">
-    <Container>
+  <Navbar bg="dark" expand="lg" >
+    <Container style={{ color: 'black' }}>
       <Navbar.Brand href="#home" >Watch-hub</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react';
-import { useSelector, shallowEqual, useDispatch } from 'react-redux';
-import { FetchFilms } from '../../redux/film';
+import React from 'react';
 import Film from './Film';
 import './filmlist.css';
 
-const Filmlist = () => {
-  const dispatch = useDispatch();
-  const films = useSelector((state) => state.films, shallowEqual);
-
-  useEffect(() => { dispatch(FetchFilms()); }, []);
+const Filmlist = ({ films }) => {
 
   return (
     <section className="container">

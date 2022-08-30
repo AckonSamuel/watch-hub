@@ -5,13 +5,13 @@ import Row from 'react-bootstrap/Row';
 import Banner from './film/Banner';
 import Filmlist from './film/Filmlist';
 
-const Homepage = () => (
+const Homepage = ({films}) => (
   <Container>
     <Row style={{ height: '30%' }}>
-      <Banner />
+      <Banner films={films} />
     </Row>
     <Row>
-      <Filmlist />
+      <Filmlist films={films} />
     </Row>
   </Container>
 );

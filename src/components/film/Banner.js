@@ -1,11 +1,9 @@
 import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.css';
 import Card from 'react-bootstrap/Card';
 import './filmlist.css';
 
-const Banner = () => {
-  const films = useSelector((state) => state.films, shallowEqual);
+const Banner = ({ films }) => {
   const imgArray = [];
   films.forEach((film) => {
     imgArray.push(film.movie_banner);

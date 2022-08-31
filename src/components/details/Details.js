@@ -98,7 +98,6 @@ Details.propType = {
       release_date: PropTypes.string.isRequired,
       running_time: PropTypes.string.isRequired,
       rt_score: PropTypes.string.isRequired,
-
     }),
   ).isRequired,
 }

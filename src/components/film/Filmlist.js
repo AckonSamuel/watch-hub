@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Film from './Film';
 import './filmlist.css';
 
 const Filmlist = ({ films, searchText, filtered }) => {
-  if (filtered.length == 0 && searchText.length !== 0) {
+  if (filtered.length === 0 && searchText.length !== 0) {
     console.log(searchText.length);
     return <h1>Oops! Search not found</h1>;
   }
@@ -23,4 +24,11 @@ const Filmlist = ({ films, searchText, filtered }) => {
     </section>
   );
 };
+
+Filmlist.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  searchText: PropTypes.string.isRequired,
+  filtered: PropTypes.string.isRequired,
+};
+
 export default Filmlist;

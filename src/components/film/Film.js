@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import './filmlist.css';
 
 const Film = ({
-  id, title, origin, origin_romanised, image,
+  id, title, image,
 }) => {
   const navigate = useNavigate();
 

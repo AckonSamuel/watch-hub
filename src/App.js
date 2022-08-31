@@ -20,12 +20,13 @@ const App = () => {
   const searchText = useSelector((state) => state.films.search, shallowEqual);
 
   if( filtered.length !== 0 )
-  { films = filtered;}
+      { films = filtered;}
+
 console.log(filtered);
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage films={films} textListener={textListener} searchText={searchText} />} />
+        <Route path="/" element={<Homepage films={films} filtered={filtered} textListener={textListener} searchText={searchText} />} />
         <Route path="/details/:title" element={<Details films={films} />} />
       </Routes>
     </BrowserRouter>

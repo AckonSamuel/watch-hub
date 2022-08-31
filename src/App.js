@@ -21,7 +21,6 @@ const App = () => {
 
   if (filtered.length !== 0) { films = filtered; }
 
-  console.log(filtered);
   return (
     <BrowserRouter>
       <Routes>

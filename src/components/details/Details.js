@@ -20,9 +20,12 @@ const Details = ({ films }) => {
       {' '}
       <Navbar bg="dark" expand="lg">
         <Container>
-          <ArrowBackIcon className='arrow' fontSize="large" color="action" 
-          onClick={() => 
-            goHome() } />
+          <ArrowBackIcon
+            className="arrow"
+            fontSize="large"
+            color="action"
+            onClick={() => goHome()}
+          />
         </Container>
       </Navbar>
       <section className="detail">

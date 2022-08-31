@@ -26,11 +26,11 @@ const filmReducer = (state = initialState, action) => {
         ...state,
         filters: action.payload === '' ? [] : filteredFilms,
       };
-    case SEARCH_TEXT: 
-    return {
-      ...state,
-      search: action.payload,
-    }
+    case SEARCH_TEXT:
+      return {
+        ...state,
+        search: action.payload,
+      };
     default:
       return state;
   }

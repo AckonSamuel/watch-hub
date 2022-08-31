@@ -84,22 +84,8 @@ const Details = ({ films }) => {
   );
 };
 
-Details.propType = {
-  films: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      original_title: PropTypes.string.isRequired,
-      original_title_romanised: PropTypes.string.isRequired,
-      description: PropTypes.string.isRequired,
-      director: PropTypes.string.isRequired,
-      producer: PropTypes.isRequired.isRequired,
-      release_date: PropTypes.string.isRequired,
-      running_time: PropTypes.string.isRequired,
-      rt_score: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-}
+Details.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+};
 
 export default Details;

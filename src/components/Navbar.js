@@ -26,7 +26,7 @@ const NavBar = ({ textListener, searchText }) => (
   </Navbar>
 );
 
-Navbar.propTypes = {
+NavBar.propTypes = {
   textListener: PropTypes.func.isRequired,
   searchText: PropTypes.string.isRequired,
 };

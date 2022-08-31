@@ -16,8 +16,6 @@ const Filmlist = ({ films, searchText, filtered }) => {
         key={film.id}
         id={film.id}
         title={film.title}
-        origin={film.original_title}
-        origin_romanised={film.original_title_romanised}
         image={film.image}
       />
     )))

@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import './filmlist.css';
 
 const Film = ({
-  id, title, origin, origin_romanised, image,
+  id, title, image,
 }) => {
   const navigate = useNavigate();
 
@@ -14,12 +14,20 @@ const Film = ({
   };
 
   return (
-    <Card className="cardi" id={id} border="dark" style={{marginLeft: '4%', marginTop: '3%', width: '20%', height: '17%'}}>
-      <Card.Img 
-      variant="top" 
-      onClick={() => goTo(`/details/${title}`)}
-      src={image} 
-      style={{ cursor: 'pointer', width: '100%', height: 'auto'}} />
+    <Card
+      className="cardi"
+      id={id}
+      border="dark"
+      style={{
+        marginLeft: '4%', marginTop: '3%', width: '20%', height: '17%',
+      }}
+    >
+      <Card.Img
+        variant="top"
+        onClick={() => goTo(`/details/${title}`)}
+        src={image}
+        style={{ cursor: 'pointer', width: '100%', height: 'auto' }}
+      />
     </Card>
   );
 };

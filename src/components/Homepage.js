@@ -6,10 +6,10 @@ import Banner from './film/Banner';
 import Filmlist from './film/Filmlist';
 import Navbar from './Navbar';
 
-const Homepage = ({ films }) => (
+const Homepage = ({ films, textListener, searchText }) => (
   <>
-    <Navbar />
-    <Container>
+    <Navbar textListener={textListener} searchText={searchText}/>
+    <Container style={{zIndex: '10'}}>
       <Row style={{ height: '30%' }}>
         <Banner films={films} />
       </Row>

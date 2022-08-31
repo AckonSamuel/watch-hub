@@ -1,4 +1,5 @@
 import Container from 'react-bootstrap/Container';
+import PropTypes from 'prop-types';
 import Form from 'react-bootstrap/Form';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -24,5 +25,10 @@ const NavBar = ({ textListener, searchText }) => (
     </Container>
   </Navbar>
 );
+
+Navbar.propTypes = {
+  textListener: PropTypes.func.isRequired,
+  searchText: PropTypes.string.isRequired,
+};
 
 export default NavBar;

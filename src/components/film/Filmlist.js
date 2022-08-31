@@ -11,15 +11,15 @@ const Filmlist = ({ films, searchText, filtered }) => {
     <section className="container">
       {
 
-  (films.map((film) => (
-    <Film
-      key={film.id}
-      id={film.id}
-      title={film.title}
-      image={film.image}
-    />
-  )))
-  }
+        (films.map((film) => (
+          <Film
+            key={film.id}
+            id={film.id}
+            title={film.title}
+            image={film.image}
+          />
+        )))
+      }
     </section>
   );
 };

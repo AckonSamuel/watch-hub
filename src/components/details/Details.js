@@ -1,11 +1,11 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Card from 'react-bootstrap/Card';
+import './details.css';
 
 const Details = ({ films }) => {
   const { title } = useParams();
@@ -13,28 +13,32 @@ const Details = ({ films }) => {
 
   const goHome = () => {
     navigate('/');
-  }
+  };
 
   return (
-   <> <Navbar bg="dark" expand="lg">
-     <Container>
-      <ArrowBackIcon fontSize="large" color="action" onClick={() => goHome()} />
-    </Container>
-    </Navbar>
-    <section className="detail">
-      <div className="innerdetail">
-        {
+    <>
+      {' '}
+      <Navbar bg="dark" expand="lg">
+        <Container>
+          <ArrowBackIcon className='arrow' fontSize="large" color="action" 
+          onClick={() => 
+            goHome() } />
+        </Container>
+      </Navbar>
+      <section className="detail">
+        <div className="innerdetail">
+          {
           films
             .filter((film) => film.title === title)
             .map((film) => (
-              <Card key={film.id} style={{ width: '70%', margin: 'auto'}}>
+              <Card key={film.id} style={{ width: '70%', margin: 'auto' }}>
                 <Card.Img variant="top" src={film.movie_banner} />
                 <Card.Body style={{ background: 'rgb(39, 38, 38)', color: '#dfdfdf' }}>
-                  <Card.Title style={{ marginTop: '3%', marginBottom: '3%'}}>{film.title}</Card.Title>
-                  <Card.Subtitle style={{ marginBottom: '3%'}}>
+                  <Card.Title style={{ marginTop: '3%', marginBottom: '3%' }}>{film.title}</Card.Title>
+                  <Card.Subtitle style={{ marginBottom: '3%' }}>
                     {film.original_title}
                   </Card.Subtitle>
-                  <Card.Subtitle style={{ marginBottom: '3%'}}>
+                  <Card.Subtitle style={{ marginBottom: '3%' }}>
                     {film.original_title_romanised}
                   </Card.Subtitle>
                   <Card.Text>
@@ -65,13 +69,13 @@ const Details = ({ films }) => {
                     {' '}
                     {film.rt_score}
                   </Card.Text>
-                 </Card.Body>
+                </Card.Body>
               </Card>
             ))
 }
-        ;
-      </div>
-    </section>
+          ;
+        </div>
+      </section>
     </>
   );
 };

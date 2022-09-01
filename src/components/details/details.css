@@ -5,3 +5,17 @@
 .arrow:hover {
   transform: scale(1.5);
 }
+
+.card-subtitle.h6,
+.card-text {
+  display: flex;
+  flex: 1;
+  border-top: 1px solid #dfdfdf;
+}
+
+.card-text > p,
+.card-subtitle.h6 > p {
+  margin-left: auto;
+  padding-left: 2%;
+  width: 50%;
+}

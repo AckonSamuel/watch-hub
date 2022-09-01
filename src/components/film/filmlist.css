@@ -13,8 +13,6 @@ h1 {
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
-  align-content: space-around;
-  justify-content: space-around;
 }
 
 .cardi {
@@ -35,7 +33,7 @@ h1 {
     width: 40%;
     height: 10%;
   }
-  
+
   .card.cardi:hover {
     transform: scale(1.2);
     z-index: 100;
@@ -46,7 +44,5 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    justify-items: space-around;
-    align-items: space-around;
   }
 }

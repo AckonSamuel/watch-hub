@@ -10,6 +10,7 @@ const App = () => {
   const dispatch = useDispatch();
   let films = useSelector((state) => state.films.film, shallowEqual);
 
+  // eslint-disable-next-line
   useEffect(() => { dispatch(FetchFilms()); }, []);
 
   const textListener = (title) => {

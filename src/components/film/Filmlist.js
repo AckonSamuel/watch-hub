@@ -25,9 +25,9 @@ const Filmlist = ({ films, searchText, filtered }) => {
 };
 
 Filmlist.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
   searchText: PropTypes.string.isRequired,
-  filtered: PropTypes.string.isRequired,
+  filtered: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
 };
 
 export default Filmlist;

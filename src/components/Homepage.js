@@ -24,21 +24,9 @@ const Homepage = ({
 );
 
 Homepage.propTypes = {
-  films: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
   textListener: PropTypes.func.isRequired,
-  filtered: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  filtered: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
   searchText: PropTypes.string.isRequired,
 };
 

@@ -85,7 +85,7 @@ const Details = ({ films }) => {
 };
 
 Details.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
 };
 
 export default Details;

@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A test for film component 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-light bg-dark"
+    style={
+      Object {
+        "position": "fixed",
+        "width": "100%",
+        "zIndex": "10000",
+      }
+    }
+  >
+    <div
+      className="container-fluid"
+      style={
+        Object {
+          "color": "black",
+        }
+      }
+    >
+      <a
+        className="navbar-brand"
+        href="#home"
+      >
+        Watch-hub
+      </a>
+      <button
+        aria-controls="basic-navbar-nav"
+        aria-label="Toggle navigation"
+        className="navbar-toggler collapsed"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="navbar-toggler-icon"
+        />
+      </button>
+      <div
+        aria-expanded={null}
+        className="navbar-collapse collapse"
+        id="basic-navbar-nav"
+      >
+        <form
+          className="d-flex"
+        >
+          <input
+            aria-label="Search"
+            className="me-2 form-control"
+            onChange={[Function]}
+            placeholder="Search Title"
+            type="search"
+            value=""
+          />
+        </form>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="container"
+    style={
+      Object {
+        "zIndex": "10",
+      }
+    }
+  >
+    <div
+      className="row"
+      style={
+        Object {
+          "height": "30%",
+        }
+      }
+    >
+      <div
+        className="card"
+        style={
+          Object {
+            "height": "100%",
+            "padding": "0",
+            "width": "100%",
+          }
+        }
+      >
+        <img
+          alt="anime photo"
+          className="card-img-top"
+          style={
+            Object {
+              "height": "100%",
+              "margin": "0",
+              "objectFit": "cover",
+              "width": "100%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <section
+        className="container"
+      />
+    </div>
+  </div>,
+]
+`;

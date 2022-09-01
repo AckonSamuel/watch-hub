@@ -20,4 +20,11 @@ const Homepage = ({ films, textListener, filtered, searchText }) => (
   </>
 );
 
+Homepage.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
+  textListener: PropTypes.func.isRequired,
+  filtered: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
+  searchText: PropTypes.string.isRequired,
+};
+
 export default Homepage;

@@ -1,28 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
-  color: red;
+    color: red;
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-  align-content: space-around;
-  justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: auto;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .cardi {
-  background-color: rgb(39, 38, 38);
-  z-index: 10;
+    background-color: rgb(39, 38, 38);
+    z-index: 10;
 }
 
 .cardi:hover {
-  transform: scale(1.2);
-  z-index: 100;
+    transform: scale(1.2);
+    z-index: 100;
 }

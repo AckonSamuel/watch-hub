@@ -19,10 +19,8 @@ const App = () => {
   const filtered = useSelector((state) => state.films.filters, shallowEqual);
   const searchText = useSelector((state) => state.films.search, shallowEqual);
 
-  if( filtered.length !== 0 )
-      { films = filtered;}
+  if (filtered.length !== 0) { films = filtered; }
 
-console.log(filtered);
   return (
     <BrowserRouter>
       <Routes>

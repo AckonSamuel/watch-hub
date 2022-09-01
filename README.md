@@ -26,12 +26,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### Clone this repository
 
 ```bash
-$ git clone https://github.com/AckonSamuel/space-travellers-hub.git
+$ git clone https://github.com/AckonSamuel/watch-hub.git
 ```
 
 #### cd into directory
 ```
-$ cd <relative-path>/space-travellers-hub/
+$ cd <relative-path>/watch-hub/
 ```
 
 #### install dependencies
@@ -43,18 +43,7 @@ $ npm i
 $ npm start
 ```
 
-## Authors
-
-👤 **Tracey Kadenyi**
-
-- GitHub: [@TracK92](https://github.com/TracK92)
-- LinkedIn: [Tracey Kadenyi](https://www.linkedin.com/in/tracey-kadenyi/)
-
-👤 **Tushar Singh**
-
-- GitHub: [@PinkMoon25](https://github.com/PinkMoon25/)
-- Twitter: [@twitterhandle](https://twitter.com/TusharS90674484)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/meet-tushar-singh/)
+## Author
 
 👤 **Ackon Samuel**
 - GitHub: [@AckonSamuel](https://github.com/AckonSamuel/)

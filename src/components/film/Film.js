@@ -20,7 +20,7 @@ const Film = ({
       id={id}
       border="dark"
       style={{
-        marginLeft: '4%', marginTop: '3%', width: '20%', height: '17%',
+        marginLeft: '4%', marginTop: '3%',
       }}
     >
       <Card.Img
@@ -28,7 +28,7 @@ const Film = ({
         onClick={() => goTo(`/details/${title}`)}
         alt="anime photo"
         src={image}
-        style={{ cursor: 'pointer', width: '100%', height: 'auto' }}
+        style={{ cursor: 'pointer', width: '100%', height: '100%' }}
       />
     </Card>
   );

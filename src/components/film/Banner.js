@@ -24,4 +24,8 @@ const Banner = ({ films }) => {
   );
 };
 
+Banner.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
+};
+
 export default Banner;

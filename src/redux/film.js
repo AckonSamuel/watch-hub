@@ -18,7 +18,7 @@ const filmReducer = (state = initialState, action) => {
         ...state,
         film: [...action.payload],
       };
-    case FILTER_FILMS: {
+    case FILTER_FILMS:
       const filteredFilms = state.film
         .filter((film) => film.title
           .toLowerCase().includes(action.payload.toLowerCase()));
@@ -26,13 +26,11 @@ const filmReducer = (state = initialState, action) => {
         ...state,
         filters: action.payload === '' ? [] : filteredFilms,
       };
+    case SEARCH_TEXT: 
+    return {
+      ...state,
+      search: action.payload,
     }
-    case SEARCH_TEXT:
-      return {
-        ...state,
-        search: action.payload,
-      };
-
     default:
       return state;
   }
@@ -42,6 +40,7 @@ const FetchFilms = createAsyncThunk(
   FETCH_FILMS,
   async () => {
     const res = await axios.get('https://ghibliapi.herokuapp.com/films').then((res) => res.data);
+    console.log(res);
     return res;
   },
 );

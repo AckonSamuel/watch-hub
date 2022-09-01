@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.css';
 import Card from 'react-bootstrap/Card';
 import './filmlist.css';
@@ -23,10 +22,6 @@ const Banner = ({ films }) => {
       />
     </Card>
   );
-};
-
-Banner.propTypes = {
-  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
 };
 
 export default Banner;

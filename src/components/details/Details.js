@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -20,9 +21,12 @@ const Details = ({ films }) => {
       {' '}
       <Navbar bg="dark" expand="lg">
         <Container>
-          <ArrowBackIcon className='arrow' fontSize="large" color="action" 
-          onClick={() => 
-            goHome() } />
+          <ArrowBackIcon
+            className="arrow"
+            fontSize="large"
+            color="action"
+            onClick={() => goHome()}
+          />
         </Container>
       </Navbar>
       <section className="detail">
@@ -78,6 +82,10 @@ const Details = ({ films }) => {
       </section>
     </>
   );
+};
+
+Details.propTypes = {
+  films: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.any)).isRequired,
 };
 
 export default Details;

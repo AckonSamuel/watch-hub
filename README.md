@@ -1,41 +1,70 @@
-#### Watch-hub
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
+#### Watch-hub
+> Description of the project: 
 This is a web app that displays a collection of anime from [https://ghibliapi.herokuapp.com/](this API). You enter a search text that filters the collection to show your desired result.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template. 
 
-### Steps to run the project
 
-## Clone the project onto your local device
+## Built With
 
-For example, using the terminal, run: `$git clone https://github.com/AckonSamuel/watch-hub.git`
+- Major languages: HTML | CSS | JavaScript 
+- Library/Framework: Reactjs | Redux | Jest 
 
-##  cd into project folder
+## Live Demo
+[Live Demo Link](https://deploy-preview-7--vocal-praline-119922.netlify.app/)
 
-`cd <relative path>/watch-hu/`
 
-## Run the project
-`npm start`
+## Preview
+![space](./screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting started
 
-## Available Scripts
+#### Clone this repository
 
-### `npm test`
+```bash
+$ git clone https://github.com/AckonSamuel/space-travellers-hub.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### cd into directory
+```
+$ cd <relative-path>/space-travellers-hub/
+```
 
-### `npm run build`
+#### install dependencies
+``` run 
+$ npm i
+```
+#### run project
+```
+$ npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Authors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+👤 **Tracey Kadenyi**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- GitHub: [@TracK92](https://github.com/TracK92)
+- LinkedIn: [Tracey Kadenyi](https://www.linkedin.com/in/tracey-kadenyi/)
 
-### `npm run eject`
+👤 **Tushar Singh**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- GitHub: [@PinkMoon25](https://github.com/PinkMoon25/)
+- Twitter: [@twitterhandle](https://twitter.com/TusharS90674484)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/meet-tushar-singh/)
+
+👤 **Ackon Samuel**
+- GitHub: [@AckonSamuel](https://github.com/AckonSamuel/)
+- Twitter: [@AckonSamuel2](https://twitter.com/AckonSamuel2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-yaw-ackon/)
+
+👤
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!

@@ -26,6 +26,7 @@ const Film = ({
       <Card.Img
         variant="top"
         onClick={() => goTo(`/details/${title}`)}
+        alt="anime photo"
         src={image}
         style={{ cursor: 'pointer', width: '100%', height: 'auto' }}
       />

@@ -17,6 +17,7 @@ const Banner = ({ films }) => {
       <Card.Img
         variant="top"
         src={imgArray[randomNum]}
+        alt="anime photo"
         style={{
           width: '100%', height: '100%', objectFit: 'cover', margin: '0',
         }}

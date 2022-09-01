@@ -12,7 +12,7 @@ const NavBar = ({ textListener, searchText }) => (
         <Form className="d-flex">
           <Form.Control
             type="search"
-            placeholder="Search"
+            placeholder="Search Title"
             className="me-2"
             aria-label="Search"
             value={searchText}

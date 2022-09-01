@@ -36,7 +36,7 @@ const Details = ({ films }) => {
             .filter((film) => film.title === title)
             .map((film) => (
               <Card key={film.id} style={{ width: '70%', margin: 'auto' }}>
-                <Card.Img variant="top" src={film.movie_banner} />
+                <Card.Img variant="top" alt="anime photo" src={film.movie_banner} />
                 <Card.Body style={{ background: 'rgb(39, 38, 38)', color: '#dfdfdf' }}>
                   <Card.Title style={{ marginTop: '3%', marginBottom: '3%' }}>{film.title}</Card.Title>
                   <Card.Subtitle style={{ marginBottom: '3%' }}>

@@ -41,36 +41,36 @@ const Details = ({ films }) => {
                     <Card.Subtitle style={{ marginBottom: '3%' }}>
                       <span>Original Title</span>
                       {' '}
-                      <p>{film.original_title}</p>
+                      <span className="spanner">{film.original_title}</span>
                     </Card.Subtitle>
                     <Card.Subtitle style={{ marginBottom: '3%' }}>
                       <span>Original Title Romanised</span>
                       {' '}
-                      <p>{film.original_title_romanised}</p>
+                      <span className="spanner">{film.original_title_romanised}</span>
                     </Card.Subtitle>
                     <Card.Text>
                       <span>Description</span>
-                      <p>{film.description}</p>
+                      <span className="spanner">{film.description}</span>
                     </Card.Text>
                     <Card.Text>
                       <span>Description</span>
-                      <p>{film.director}</p>
+                      <span className="spanner">{film.director}</span>
                     </Card.Text>
                     <Card.Text>
                       <span>Producer</span>
-                      <p>{film.producer}</p>
+                      <span className="spanner">{film.producer}</span>
                     </Card.Text>
                     <Card.Text>
                       <span>Release date</span>
-                      <p>{film.release_date}</p>
+                      <span className="spanner">{film.release_date}</span>
                     </Card.Text>
                     <Card.Text>
                       <span>Running Title</span>
-                      <p>{film.running_time}</p>
+                      <span className="spanner">{film.running_time}</span>
                     </Card.Text>
                     <Card.Text>
                       <span>Rt Score</span>
-                      <p>{film.rt_score}</p>
+                      <span className="spanner">{film.rt_score}</span>
                     </Card.Text>
                   </Card.Body>
                 </Card>

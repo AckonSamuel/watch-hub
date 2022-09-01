@@ -13,8 +13,8 @@
   border-top: 1px solid #dfdfdf;
 }
 
-.card-text > p,
-.card-subtitle.h6 > p {
+.card-text > .spanner,
+.card-subtitle.h6 > .spanner {
   margin-left: auto;
   padding-left: 2%;
   width: 50%;

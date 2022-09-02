@@ -43,6 +43,10 @@ $ npm i
 $ npm start
 ```
 
+#### run tests
+```
+$ npm test
+```
 ## Author
 
 👤 **Ackon Samuel**
@@ -60,3 +64,12 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+
+- All the template colors, font, layout distribution for the whole project were designed by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) on Behance. Check Cindy for more amazing GUI and Graphic designs!
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

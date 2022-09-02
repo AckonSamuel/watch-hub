@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.cardi {
+  background-color: rgb(39, 38, 38);
+  z-index: 10;
+  width: 20%;
+}
+
+.cardi:hover {
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+@media all and (max-width: 991px) {
+  .card.cardi {
+    background-color: rgb(39, 38, 38);
+    z-index: 10;
+    width: 40%;
+    height: 10%;
+  }
+
+  .card.cardi:hover {
+    transform: scale(1.2);
+    z-index: 100;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if Filmlist renders 1`] = `
+<section
+  className="container"
+>
+  <div
+    className="cardi card border-dark"
+    id="2baf70d1-42bb-4437-b551-e5fed5a87abe"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/npOnzAbLh6VOIu3naU5QaEcTepo.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="12cfb892-aac0-4c5b-94af-521852e46d6a"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="58611129-2dbc-4a81-a72f-77ddfc1b1b49"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rtGDOeG9LzoerkDGZF9dnVeLppL.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="ea660b10-85c4-4ae3-8a5f-41cea3648e3e"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/7nO5DUMnGUuXrA4r2h6ESOKQRrx.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="4e236f34-b981-41c3-8c65-f8c9000b94e7"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/xjJU6rwzLX7Jk8HFQfVW6H5guMC.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="ebbb6b7c-945c-41ee-a792-de0e43191bd8"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/byKAndF6KQSDpGxp1mTr23jPbYp.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="1b67aa9a-2e4a-45af-ac98-64d6ad15b16c"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kowo9E1e1JcWLXj9cCvAOFZcy5n.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="ff24da26-a969-4f0e-ba1e-a122ead6c6e3"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5E3Hvbu0bg38ouYf6chGftVGqZ7.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="cardi card border-dark"
+    id="0440483e-ca0e-4120-8c50-4c8cd9b965d6"
+    style={
+      Object {
+        "marginLeft": "4%",
+        "marginTop": "3%",
+      }
+    }
+  >
+    <img
+      alt="anime photo"
+      className="card-img-top"
+      onClick={[Function]}
+      src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jHWmNr7m544fJ8eItsfNk8fs2Ed.jpg"
+      style={
+        Object {
+          "cursor": "pointer",
+          "height": "100%",
+          "width": "100%",
+        }
+      }
+    />
+  </div>
+</section>
+`;

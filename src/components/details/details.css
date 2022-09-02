@@ -1,0 +1,21 @@
+.arrow {
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.5);
+}
+
+.card-subtitle.h6,
+.card-text {
+  display: flex;
+  flex: 1;
+  border-top: 1px solid #dfdfdf;
+}
+
+.card-text > .spanner,
+.card-subtitle.h6 > .spanner {
+  margin-left: auto;
+  padding-left: 2%;
+  width: 50%;
+}
